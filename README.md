@@ -9,7 +9,14 @@ a page where new wiki entries can be made and the capability to edit existing wi
 
 ## To Do
 
-First, I will have to create some sketches of what the web application will eventually look like. I will make these in the JustInMind application.
-Then, these sketches will have to be added to this readme file using the markdown language. 
+First, I will have to create some sketches of what the web application will eventually look like. I will make these in the JustInMind application. Then, these sketches will have to be added to this readme file using the markdown language. 
 
-Second, functionality will have to be added. To start, the index page will be updated so that each page on will be clickable. Clicking these pages will lead to a new page where the entrie can be viewed and edited. 
+Below you will find the sketches for the different pages in the web app.
+
+![The homepage](sketches/homepage.png)
+
+![Creation of a new entry](sketches/new_page.png)
+
+![What a wiki entry will look like](sketches/wiki_entry.png)
+
+
