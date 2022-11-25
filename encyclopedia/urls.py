@@ -9,5 +9,6 @@ the path function with two or three arguments: (1) A string representing the URL
 views.py that we wish to call when that URL is visited, and (3) (optionally) a name for that path. """
 
 urlpatterns = [
-    path("", views.index, name="index")
+    path("", views.index, name="index"),
+    path("<str:entry_title>", views.entry, name="entry_title"),
 ]
