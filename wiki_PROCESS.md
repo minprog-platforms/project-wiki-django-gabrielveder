@@ -10,3 +10,10 @@ Het maken van drie sketches was een redelijke uitdaging aangezien ik de software
 
 Vervolgens ben ik begonnen met het implementeren van functionaliteit. Eerst moest de juiste entry pagina worden getoond bij invoer van een
 geldige url. Dit is met behulp van een begeleider gelukt. Het lastigste deel was het begrijpen van de derde argument in de Django 'render' functie.
+
+#### 02 - 12 - 2022
+Zojuist heb ik meer functionaliteit toegevoegd aan de index pagina. Na een aantal aanpassingen is het nu mogelijk om op entries te klikken en
+naar deze entry pagina genomen te worden. De titels van de wiki entries zijn links geworden. Om dit voor elkaar te krijgen was wat nieuwe syntax
+nodig. 
+
+De volgende uitdaging zal zijn om een werkende search-bar te maken. 
