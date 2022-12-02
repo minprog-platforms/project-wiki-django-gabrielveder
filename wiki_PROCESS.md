@@ -16,4 +16,6 @@ Zojuist heb ik meer functionaliteit toegevoegd aan de index pagina. Na een aanta
 naar deze entry pagina genomen te worden. De titels van de wiki entries zijn links geworden. Om dit voor elkaar te krijgen was wat nieuwe syntax
 nodig. 
 
-De volgende uitdaging zal zijn om een werkende search-bar te maken. 
+De volgende uitdaging zal zijn om een werkende search-bar te maken. De HttpResponseRedirect functie kon gebruikt worden om gebruik te maken van
+de query van de gebruiker. Ook heb ik een functie geschreven in de util.py file om substrings van strings te zoeken. Deze functie wordt gebruikt
+in de search functie van het views.py bestand. 
