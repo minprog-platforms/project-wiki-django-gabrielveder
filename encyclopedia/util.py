@@ -36,6 +36,15 @@ def get_entry(title):
     except FileNotFoundError:
         return None
 
+def check_title(title: str) -> bool:
+    """ 
+    Returns True if entry with given title already exists.
+    Else False.
+    """
+    entries = list_entries()
+    if title in entries:
+        return True
+    return False
 
 def substring(query: str):
     entries = list_entries()

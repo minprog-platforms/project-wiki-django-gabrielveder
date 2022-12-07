@@ -19,3 +19,11 @@ nodig.
 De volgende uitdaging zal zijn om een werkende search-bar te maken. De HttpResponseRedirect functie kon gebruikt worden om gebruik te maken van
 de query van de gebruiker. Ook heb ik een functie geschreven in de util.py file om substrings van strings te zoeken. Deze functie wordt gebruikt
 in de search functie van het views.py bestand. 
+
+#### 06 - 12 - 2022
+Om nieuwe entries te kunnen toevoegen, was weer nieuwe functionaliteit nodig. Hiervoor waren een nieuwe url, een nieuwe functie in views.py
+en een nieuwe helperfunctie in util.py vereist. De helperfunctie in util.py werd geschreven om te kunnen controlleren of een entry met de ingevoerde titel al bestond.
+
+#### 07 - 12 - 2022
+Om een werkende 'create new entry' pagina te maken, was het nodig om een onderscheid te maken tussen een
+'get' en een 'post' methode. Samen met Max werd het voor mij duidelijk dat de request.method 'get' moet zijn wanneer de 'create new entry' pagina wordt aangevraagd en dat de request.method 'post' moet zijn wanneer men bijvoorbeeld een formulier invuld. Dit nieuwe inzicht kon in de new_page functie worden toegepast om nieuwe entries te kunnen maken door de gebruiker.
