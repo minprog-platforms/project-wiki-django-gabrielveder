@@ -3,9 +3,8 @@ from markdown2 import Markdown
 from django.urls import reverse
 from django.http import HttpResponseRedirect
 
+import random as rd
 from . import util
-
-# views can be thought of as pages the user can see
 
 def index(request):
     return render(request, "encyclopedia/index.html", {
@@ -59,3 +58,12 @@ def new_page(request):
         util.save_entry(title, body) 
         # Redirects user to created entry 
         return HttpResponseRedirect(title)
+
+def random(request):
+    """
+    Redirects user to random page when clicked on the 'Random Page' button
+    from anywhere on the website.
+    """
+    entries = util.list_entries()
+    entry = rd.choice(entries)
+    return HttpResponseRedirect(entry)

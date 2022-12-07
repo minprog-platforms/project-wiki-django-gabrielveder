@@ -22,8 +22,11 @@ in de search functie van het views.py bestand.
 
 #### 06 - 12 - 2022
 Om nieuwe entries te kunnen toevoegen, was weer nieuwe functionaliteit nodig. Hiervoor waren een nieuwe url, een nieuwe functie in views.py
-en een nieuwe helperfunctie in util.py vereist. De helperfunctie in util.py werd geschreven om te kunnen controlleren of een entry met de ingevoerde titel al bestond.
+en een nieuwe helperfunctie in util.py vereist. De helperfunctie in util.py werd geschreven om te kunnen controlleren of een entry met de ingevoerde titel al bestond. Deze helperfunctie kon weer worden toegepast in de new_page functie in views.py.
 
 #### 07 - 12 - 2022
 Om een werkende 'create new entry' pagina te maken, was het nodig om een onderscheid te maken tussen een
-'get' en een 'post' methode. Samen met Max werd het voor mij duidelijk dat de request.method 'get' moet zijn wanneer de 'create new entry' pagina wordt aangevraagd en dat de request.method 'post' moet zijn wanneer men bijvoorbeeld een formulier invuld. Dit nieuwe inzicht kon in de new_page functie worden toegepast om nieuwe entries te kunnen maken door de gebruiker.
+'get' en een 'post' methode. Samen met Max werd het voor mij duidelijk dat de request.method 'get' moet zijn wanneer de 'create new entry' pagina wordt aangevraagd en dat de request.method 'post' moet zijn wanneer men bijvoorbeeld een formulier invuld. Dit nieuwe inzicht kon in de new_page functie worden toegepast om nieuwe entries te kunnen maken door de gebruiker. Vervolgens werd een HttpResponseRedirect gebruikt om de gebruiker direct door de sturen naar de pagina die ze op dat moment aan hadden gemaakt. 
+
+De 'random pagina' knop werd ook functioneel gemaakt. Dit was vrij eenvoudig te doen door een random element uit een lijst te halen.
+Het enige waar ik tegen aanliep was het importeren van de python random module. Dit zorgte in Django voor een probleem, misschien omdat er al iets bestond als een 'random' object. Dit probleem werd opgelost door random te importeren als 'rd'.
